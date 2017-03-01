@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="methods">
+  <test name="Chrome Test(failed)" parallel="methods">
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="com.smoke.demo.SmokeTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="Login"/>
+          <include name="afterTest"/>
+          <include name="SmokeTests"/>
+        </methods>
+      </class> <!-- com.smoke.demo.SmokeTest -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+  <test name="FireFox Test(failed)" parallel="methods">
+    <parameter name="browserType" value="firefox"/>
+    <classes>
+      <class name="com.smoke.demo.SmokeTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="Login"/>
+          <include name="afterTest"/>
+          <include name="SmokeTests"/>
+        </methods>
+      </class> <!-- com.smoke.demo.SmokeTest -->
+    </classes>
+  </test> <!-- FireFox Test(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
